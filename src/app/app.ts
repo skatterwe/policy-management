@@ -23,7 +23,7 @@ export class App {
       fdc3.addIntentListener(intent, (ctx: any, metadata: any) => {
         console.log('Received Context For Intent: ' + intent, ctx);
         console.log('Received Metadata With Intent: ' + intent, metadata);
-        this.router.navigate(['/system', ctx.system, 'contracts', ctx.id]);
+        this.router.navigate([ctx.system, 'contracts', ctx.id]);
       });
 
     }
